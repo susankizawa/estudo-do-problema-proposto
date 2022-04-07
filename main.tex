@@ -57,28 +57,6 @@
     \palavraschave{Palavra 1, Palavra 2, Palavra 3}    
 \end{resumo}
 
-% Listas
-\listadefiguras
-\listadegraficos
-\listadetabelas
-\listadequadros
-\listadecodigos
-\listadealgoritmos
-
-% Lista de siglas
-\begin{siglas}
-  \item[ABNT] Associação Brasileira de Normas Técnicas
-\end{siglas}
-% ---
-
-% Lista de símbolos
-\begin{simbolos}
-  \item[$ \Gamma $] Letra grega Gama
-  \item[$ \Lambda $] Lambda
-  \item[$ \zeta $] Letra grega minúscula zeta
-  \item[$ \in $] Pertence
-\end{simbolos}
-
 % Sumario
 \sumario
 
@@ -184,197 +162,53 @@ O componente 7 é o botão de fazer e desfazer.
 
 E o componente 8 é botão que deleta todos os nós utilizados.
 
+\newpage
+
+Também será necessário criar uma tela para o sucesso do esquema.
+
+\begin{figure}[!h]
+    \centering
+    \legenda[fig:tela-de-sucesso]{Tela de sucesso}
+    \includegraphics[width=0.9\textwidth]{sucesso}
+    \fonte{\citeonline{while-true-learn}}
+\end{figure}
+
+Assim como uma tela para o fracasso do esquema.
+
+\begin{figure}[!h]
+    \centering
+    \legenda[fig:tela-de-fracasso]{Tela de fracasso}
+    \includegraphics[width=0.9\textwidth]{fracasso}
+    \fonte{\citeonline{while-true-learn}}
+\end{figure}
+
+A \autoref{fig:tela-de-fracasso} mostre a tela de fracasso de outra fase, pois na primeira fase do jogo é impossível ver uma tela de fracasso.
+
+\newpage
+
+Na primeira fase, ao invés de uma tela de fracasso, o jogo informa o usuário o que está fazendo de errado.
+
+\begin{figure}[!h]
+    \centering
+    \legenda[fig:conectadas-incorretamente]{Se as entradas e saídas estiverem conectadas incorretamente}
+    \includegraphics[width=0.9\textwidth]{conectadas-incorretamente}
+    \fonte{\citeonline{while-true-learn}}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \legenda[fig:pelo-menos-um-noh]{Se o jogador não colocar pelo menos um nó}
+    \includegraphics[width=0.9\textwidth]{pelo-menos-um-noh}
+    \fonte{\citeonline{while-true-learn}}
+\end{figure}
 % -----------------------------------------------------------------------
 % -----------------------------------------------------------------------
 \chapter{Histórico do jogo}
 \label{cap:historico-do-jogo}
 
-Histórico do jogo.
-
-% -----------------------------------------------------------------------
-% -----------------------------------------------------------------------
-\chapter{Elementos de apoio}
-\label{cap:apoio}
-
-% -----------------------------------------------------------------------
-\section{Ilustrações}
-\label{cap:ilustracoes}
-
-Ilustrações são elementos cuja função é complementar ao texto: são explicativas 
-e informativas, não podendo apenas adornar ou enfeitar o trabalho. Fazem parte 
-das ilustrações: desenhos, esquemas, fluxogramas, fotografias, gráficos, mapas, 
-organogramas, plantas, quadros, retratos, figuras, imagens e outros.
-
-A ilustração deve ser anunciada no texto – chamada pelo seu nmero (algarismos 
-arábicos) – e inserida o mais próximo possível do trecho a que se refere.
-Qualquer que seja o tipo de ilustração, sua identificação aparece na parte 
-superior, precedida da palavra designativa (Figura, Mapa, Gráfico, etc.), 
-seguida de seu número de ordem de ocorrência no texto, em algarismos arábicos, 
-hífen ou travessão e do respectivo título.
-
-Quando a ilustração for elaborada pelo(s) autor(es) do trabalho, deverá 
-aparecer ``o próprio autor'' ou, no caso de trabalho em equipe, ``os próprios 
-autores''. A \autoref{fig:grafico} apresenta um exemplo de gráfico. A 
-\autoref{fig:figura} apresenta um exemplo de figura centralizada, enquanto a 
-\autoref{fig:subfigura} apresenta exemplos de subfiguras.
-
-\begin{grafico}[htb]
-    \legenda[fig:grafico]{Exemplo de gráfico}
-    \fig{scale=0.6}{imagens/teste}
-    \fonte{\citeonline[p. 24]{araujo2012}}
-\end{grafico}
-
-\begin{figure}[htb]
-    \legenda[fig:figura]{Exemplo de figura}
-    \fig{scale=0.6}{imagens/teste}
-    \fonte{\citeonline[p. 24]{araujo2012}}
-\end{figure}
-
-\begin{figure}[htb]
-    \legenda[fig:subfigura]{Exemplo de várias subfiguras}
-    \sfig{scale=0.3}{imagens/teste}\hfil
-    \sfig{scale=0.3}{imagens/teste}\hfil
-    \sfig{scale=0.3}{imagens/teste}
-    
-    \lfig[s:a3]{scale=0.3}{imagens/teste}{zzzz}\hfil
-    \lfig[s:a3]{scale=0.3}{imagens/teste}{zzzz}\hfil
-    \lfig[s:a4]{scale=0.3}{imagens/teste}{yyyy}
-    
-    \fonte{teste}
-\end{figure}
-
-% -----------------------------------------------------------------------
-\section{Tabelas e Quadros}
-\label{sec:tabelas}
-
-As tabelas não são consideradas ilustrações, mas, sim, elementos demonstrativos 
-de síntese. Por serem autossuficientes, não complementam o texto, isto porque 
-já fazem parte dele como uma organização estrutural esquematizada. Segundo o 
-IBGE (1993), as tabelas apresentam dados e/ou informações oriundos de 
-tratamento estatístico e sua inserção no decorrer dos trabalhos segue as mesmas 
-regras aplicadas para as ilustrações (identificação na parte superior com 
-número e título, e fonte de referência na parte inferior em letra menor).
-
-As tabelas podem ser inseridas no texto ou em anexo (principalmente as de 
-formato grande, que ocupam uma página inteira ou mais). Recomenda-se incluir a 
-observação ``continua...'' e ``... continuação'' nas respectivas partes, quando 
-a tabela ocupar mais de uma página. Quando inseridas no texto, devem ser 
-alinhadas às margens laterais ou centralizadas, se apresentarem formato pequeno.
-
-Em suas delimitações, são usados traços horizontais para destacar o cabeçalho, 
-bem como traço horizontal final. Indica-se a delimitação, no alto e em baixo, 
-por traços horizontais grossos, preferencialmente. Não deve ser delineada à 
-direita e à esquerda, por traços verticais e é facultativo o emprego de traços 
-verticais para separação das colunas no corpo da tabela.
-
-Teste %\citealias{abntex2-wiki-como-customizar}
-%\citeasnoun{abntex2-wiki-como-customizar}
-%\cites{abntex2-wiki-como-customizar}
-%\citename
-
-\cite{abntex2cite}
-
-\citeonline{abntex2cite}
-
-
-
-\begin{table}[htb]
-    \legenda[tab:exemplo]{Exemplo de tabela}
-    \begin{tabular}{c|ccc}
-        \hline\
-        \textbf{Pessoa} & \textbf{Idade} & \textbf{Peso} & \textbf{Altura} \\ 
-        \hline\hline
-        Marcos & 26    & 68   & 178    \\ 
-        Ivone  & 22    & 57   & 162    \\ 
-        ...    & ...   & ...  & ...    \\ 
-        Sueli  & 40    & 65   & 153    \\ \hline
-    \end{tabular}
-    
-    \fonteautor
-\end{table}
- 
-Quando houver informações ou dados numéricos que não necessitem de cálculos 
-(por exemplo, características, propriedades, relações, etc.), poderão ser 
-utilizados os quadros. Nestes, os traços contornam toda a tabela.
-
-\begin{lista}
-	\item novo
-	\item asd
-	\item asd
-	\item asd
-	\item asd
-\end{lista}
-
-\begin{quadro}[htb]
-    \legenda[quadro:exemplo]{Exemplo de quadro}
-    \begin{tabular}{|c||c|c|c|}
-        \hline
-        \textbf{Pessoa} & \textbf{Idade} & \textbf{Peso} & \textbf{Altura} \\ 
-        \hline\hline
-        Marcos & 26    & 68   & 178    \\ \hline
-        Ivone  & 22    & 57   & 162    \\ \hline
-        ...    & ...   & ...  & ...    \\ \hline
-        Sueli  & 40    & 65   & 153    \\ \hline
-    \end{tabular}
-    
-    \fonte{\citeauthor{EIA649B}}
-\end{quadro}
-
-% -----------------------------------------------------------------------
-\section{Equações}
-\label{sec:equações}
-
-Para facilitar a leitura, equações e fórmulas devem ser destacadas no texto e, 
-se necessário, numeradas com algarismos arábicos entre parênteses, alinhados à 
-direita. Na sequência normal do texto, é permitido o uso de uma entrelinha 
-maior que comporte seus elementos (expoentes, índices, entre outros). A 
-\autoref{eq:exemplo} apresenta um exemplo de equação.
-
-\begin{equation}
-\label{eq:exemplo}
-C_{(A,B)} = \{ p \in
-A\;|\;[(\overrightarrow{q_i-c}){\cdot}{\vec{n}}_c][(\overrightarrow{q_j-c})
-{\cdot}{\vec{n}}_c]
-< 0 \}
-\end{equation}
-
-% -----------------------------------------------------------------------
-% -----------------------------------------------------------------------
-\section{Códigos e Algoritmos}
-\label{sec:codigos}
-
-Os códigos e algoritmos podem ser inseridos no texto usando comandos 
-\texttt{codigo} e \texttt{algoritmo}, respectivamente. O \autoref{cod:fib} 
-apresenta um exemplo de código em C.
-
-\begin{codigo}[htb]
-    \legenda[cod:fib]{Calcula Fibonacci}
-    \begin{lstlisting}[language=C]
-    int main() {
-        int n, first = 0, second = 1, next, c;
-        
-        printf("Enter the number of terms\n");
-        scanf("%d", &n);
-        
-        printf("First %d terms of Fibonacci series are :-\n", n);
-        
-        for (c = 0; c < n; c++){
-            if (c <= 1) next = c;
-            else {
-                next = first + second;
-                first = second;
-                second = next;
-            }
-            printf("%d\n",next);
-        }
-        
-        return 0;
-    }
-    \end{lstlisting}
-    
-    \fonteautor
-\end{codigo}
-
+A versão Alfa do jogo foi aberta a todos em novembro de 2017 com o modelo de "Pague o quanto quiser" para ajudar o jogo.
+Em 29 de Março de 2018 foi liberado o acesso antecipado na plataforma Steam.
+Em 17 de janeiro de 2019 foi lançado oficialmente na plataforma Steam.
 
 % -----------------------------------------------------------------------
 % -----------------------------------------------------------------------
@@ -430,3 +264,4 @@ Veja \autoref{apendice:teste}.
 
 
 \end{document}
+
