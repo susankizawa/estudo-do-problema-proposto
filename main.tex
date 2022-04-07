@@ -123,31 +123,66 @@ para uma forma impessoal no meio do texto. E vice-versa.
 
 % -----------------------------------------------------------------------
 % -----------------------------------------------------------------------
-\chapter{O que é o jogo}
-\label{cap:o-que-eh-o-jogo}
+\chapter{O que é o jogo e suas características}
+\label{cap:o-que-eh-o-jogo-e-suas-caracteristicas}
 
-O que é o jogo?
+\citeonline{while-true-learn} é um jogo educativo que ensina o usuário sobre aprendizado de máquina, redes neurais, big data e inteligência artificial através de quebra-cabeças.
 
-% -----------------------------------------------------------------------
-% -----------------------------------------------------------------------
-\chapter{Objetivo do jogo}
-\label{cap:objetivo-do-jogo}
-
-Objetivo do jogo.
+No videogame, o jogador assume o papel de um programador cujo gato programa muito bem, porém não fala a língua humana tão bem. Assim o protagonista decide criar um algoritmo para traduzir o que seu gato fala.
 
 % -----------------------------------------------------------------------
 % -----------------------------------------------------------------------
-\chapter{Regras do jogo}
-\label{cap:regras-do-jogo}
+\chapter{Regras e Objetivo do jogo}
+\label{cap:regras-e-objetivo-do-jogo}
 
-Regras do jogo.
+Cada fase possui uma entrada e duas ou mais saídas. O objetivo do jogo é utilizar os nós providenciados na fase para guiar os dados para as saídas, porém os dados não devem ir para qualquer saída. Cada saída têm suas exigências. Por exemplo: uma saída quer quadrados azuis, outra quer quadrados vermelhos. Além disso a saída pode exigir precisão. Por exemplo: 100\% dos quadrados recebidos devem ser vermelhos. Caso as condições exigidas por todas as saídas sejam atendidas, o jogador completa a fase.
+
+Além dos nós, outros recursos que o usuário pode usar são o botão de desfazer e refazer, o botão de lixeira que deleta todos os nós, o botão que salva o esquema, mudar o nome do esquema e o botão que roda o algoritmo criado pelo jogador.
 
 % -----------------------------------------------------------------------
 % -----------------------------------------------------------------------
 \chapter{Tela do jogo}
 \label{cap:tela-do-jogo}
 
-Tela do jogo
+A \autoref{fig:fase} mostra a fase que será produzida no Godot.
+
+\vspace{1em}
+
+\begin{figure}[!h]
+    \centering
+    \legenda[fig:fase]{Fase Treinamento: Sistemas Especialistas}
+    \includegraphics[width=0.9\textwidth]{fase}
+    \fonte{\citeonline{while-true-learn}}
+\end{figure}
+
+\newpage
+
+Para fazer o jogo, será necessário entender alguns componentes essenciais.
+
+\vspace{1em}
+
+\begin{figure}[!h]
+    \centering
+    \legenda[fig:componentes-da-fase]{Componentes da fase}
+    \includegraphics[width=0.9\textwidth]{componentes-da-fase}
+    \fonte{\citeonline{while-true-learn}}
+\end{figure}
+
+\vspace{1em}
+
+O componente 1 é a entrada que irá mandar um dado aleatório em seu armazenamento para a sua saída.
+
+O componente 2 são as saídas que receberão os dados enviados para suas respectivas entradas.
+
+O componente 3 são o botão que roda o programa e o botão que salva o esquema.
+
+O componente 5 é onde estão guardados os nós que poderão ser arrastados para serem colocados no programa.
+
+O componente 6 é o nome do esquema que poderá ser modificado.
+
+O componente 7 é o botão de fazer e desfazer.
+
+E o componente 8 é botão que deleta todos os nós utilizados.
 
 % -----------------------------------------------------------------------
 % -----------------------------------------------------------------------
@@ -155,13 +190,6 @@ Tela do jogo
 \label{cap:historico-do-jogo}
 
 Histórico do jogo.
-
-% -----------------------------------------------------------------------
-% -----------------------------------------------------------------------
-\chapter{Características do jogo}
-\label{cap:caracteristicas-do-jogo}
-
-Características do jogo.
 
 % -----------------------------------------------------------------------
 % -----------------------------------------------------------------------
